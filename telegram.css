@@ -9,21 +9,22 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, red, pink, yellow)
+  background: linear-gradient(165deg, red, pink, yellow)
 }
 .container {
   padding: 25px;
   width: 70%;
   background-color: white;
   border-radius: 10px;
-  
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.6);
 }
 .mild-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
 }
 
 .image-section {
@@ -46,9 +47,20 @@ body {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 5px;
-  
+  position: relative;
+}
+.text-section .title::before {
+  content: "";
+  height: 3px;
+  width: 24px;
+  bottom: -2px;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(135deg, red, pink, yellow);
+  border-radius: 6px;
+}
 
-}.text-section .content {
+.text-section .content {
   font-weight: 400;
   font-size: 16px;
   margin-bottom: 5px;
@@ -60,7 +72,7 @@ body {
 .input-section {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   position: relative;
 }
 .input-section .country {
@@ -95,6 +107,8 @@ body {
   border: 1px solid rgb(203, 199, 199);
   border-radius: 5px;
   margin-bottom: 10px;
+  font-size: 13px;
+  padding-left: 5px;
   
 }
 .button {
@@ -111,5 +125,6 @@ body {
   font-weight: bolder;
   font-size: 15px;
   border-radius: 10px;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.6);
 
 }
